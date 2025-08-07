@@ -1,0 +1,63 @@
+# Validación de Selección de Punto de Recogida – App Móvil `Urban.Lunch`
+
+## ✅ Casos Positivos
+
+### Caso #1: Visualización del mapa y ubicación del usuario/a  
+**Descripción:**  
+El mapa muestra correctamente los puntos de recogida disponibles junto con la ubicación del usuario o usuaria.
+
+**Resultado Esperado:**  
+- El mapa es visible  
+- Se destacan los puntos de recogida  
+- Se muestra la ubicación actual del usuario
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #2: Campo "Elegir restaurante" visible  
+**Descripción:**  
+El usuario puede visualizar y acceder al campo para seleccionar un restaurante.
+
+**Resultado Esperado:**  
+- Campo “Elegir restaurante” está visible  
+- El campo es interactivo
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #3: Botón de progreso visible  
+**Descripción:**  
+Se visualiza el botón de progreso con diseño correcto (color gris oscuro y flecha blanca).
+
+**Resultado Esperado:**  
+- Botón presente en la interfaz  
+- Estilo visual cumple con lo esperado
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #4: Navegación con botones numerados  
+**Descripción:**  
+Se muestran botones para avanzar entre pantallas (color amarillo y números en negro).
+
+**Resultado Esperado:**  
+- Botones visibles  
+- Correcta navegación entre pantallas
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+## ❌ Casos Negativos
+
+> ⚠️ *No se identificaron casos negativos en esta prueba específica. Se recomienda considerar futuras pruebas exploratorias con datos erróneos o condiciones límite.*
+
+---
+
+## 🧑‍💻 Tester responsable
+
+**Evelyn Nava García**  
+[GitHub: @Eve-nava](https://github.com/Eve-nava)

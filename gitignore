@@ -1,0 +1,49 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Archivos temporales / caché
+*.tmp
+*.temp
+*.cache
+
+# Archivos de backup
+*~
+*.bak
+
+# Archivos de configuración de editores / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Entornos virtuales o dependencias (si las hubiera)
+.env
+node_modules/
+
+# Archivos específicos de Python (si usas scripts)
+__pycache__/
+*.pyc
+
+# Archivos específicos de macOS
+.AppleDouble
+.LSOverride
+
+# Otros
+*.swp
+*.lock
+
+# Carpetas de compilación / distribución (por si usas algún generador)
+dist/
+build/
+
+# Archivos de sistema Windows
+ehthumbs.db
+Desktop.ini
+
+# Carpeta de imágenes (ignorar todo su contenido)
+imagenes/
+

@@ -1,0 +1,50 @@
+# Validación de Notificaciones de Error – App Móvil `Urban.Lunch`
+
+## ✅ Casos Positivos
+
+### Caso #1: Mensaje de error al denegar acceso a geolocalización  
+**Descripción:**  
+Si el usuario niega el permiso de acceso a la geolocalización, la aplicación muestra un mensaje de error.
+
+**Resultado Esperado:**  
+- Mensaje de error visible  
+- Explica que la geolocalización es necesaria para continuar
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #2: Acceso exitoso al permitir geolocalización  
+**Descripción:**  
+Al permitir el acceso a la geolocalización, la aplicación permite ingresar correctamente al sistema.
+
+**Resultado Esperado:**  
+- Acceso habilitado  
+- Flujo continúa sin errores
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #3: Error al intentar hacer pedido sin platillos  
+**Descripción:**  
+Si el usuario intenta hacer un pedido sin agregar ningún platillo, se muestra un mensaje de error.
+
+**Resultado Esperado:**  
+- El mensaje de error informa que se deben seleccionar platillos  
+- Se impide continuar sin seleccionar productos
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+## ❌ Casos Negativos
+
+> ⚠️ *No se detectaron fallos en estos escenarios. Todas las notificaciones de error funcionaron correctamente según lo esperado.*
+
+---
+
+## 🧑‍💻 Tester responsable
+
+**Evelyn Nava García**  
+[GitHub: @Eve-nava](https://github.com/Eve-nava)

@@ -1,0 +1,94 @@
+# 🐞 Reporte de Casos Fallados – App Móvil `Urban.Lunch`
+
+Este documento reúne los **casos de prueba fallidos** detectados durante la validación funcional de la aplicación móvil **Urban.Lunch**. Cada error incluye una breve descripción, el resultado esperado, el resultado real obtenido y un enlace al reporte en Jira para su seguimiento por parte del equipo de desarrollo.
+
+---
+
+## ❌ Caso #1: Zoom habilitado en emulador
+
+**Módulo:** Elección de platillos  
+**Descripción:**  
+Aunque el zoom está correctamente deshabilitado en dispositivos móviles reales, la funcionalidad sigue activa en el emulador.
+
+**Resultado Esperado:**  
+- El zoom debe estar completamente deshabilitado en todos los entornos.
+
+**Resultado Obtenido:**  
+- El emulador permite hacer zoom usando gestos o combinación de teclas.
+
+**Impacto:**  
+Comportamiento inconsistente entre entornos de prueba.
+
+🔗 [Ver bug report ENP5-3](https://jira.equipo-desarrollo.com/browse/ENP5-3)
+
+---
+
+## ❌ Caso #2: Botón “Siguiente” no se activa tras agregar platillo
+
+**Módulo:** Detalles del platillo  
+**Descripción:**  
+Después de agregar un platillo a la lista de pedidos, el botón “Siguiente” no cambia de color ni se activa, bloqueando el flujo del usuario.
+
+**Resultado Esperado:**  
+- El botón debería activarse visualmente y permitir continuar.
+
+**Resultado Obtenido:**  
+- El botón permanece desactivado incluso con productos agregados.
+
+**Impacto:**  
+Bloquea el avance del flujo de compra.
+
+🔗 [Ver bug report ENP5-1](https://jira.equipo-desarrollo.com/browse/ENP5-1)
+
+---
+
+## ❌ Caso #3: Falta de visualización del tiempo de preparación
+
+**Módulo:** Seguimiento de pedidos  
+**Descripción:**  
+La pantalla no muestra el tiempo restante de preparación del pedido.
+
+**Resultado Esperado:**  
+- El sistema debe indicar cuánto tiempo falta para que el pedido esté listo.
+
+**Resultado Obtenido:**  
+- No se muestra ningún tiempo de preparación.
+
+**Impacto:**  
+Falta de retroalimentación para el usuario sobre el estado del pedido.
+
+🔗 [Ver bug report ENP5-6](https://jira.equipo-desarrollo.com/browse/ENP5-6)
+
+---
+
+## ❌ Caso #4: Ícono incorrecto en pantalla de entrega
+
+**Módulo:** Entrega de pedido  
+**Descripción:**  
+El ícono de confirmación en el punto de recogida debería ser una palomita blanca en un círculo verde, pero no se muestra correctamente.
+
+**Resultado Esperado:**  
+- Ícono verde con palomita blanca visible en el mapa.
+
+**Resultado Obtenido:**  
+- Ícono no aparece o muestra una imagen incorrecta.
+
+**Impacto:**  
+Problemas visuales y falta de retroalimentación al usuario.
+
+🔗 [Ver bug report ENP5-9](https://jira.equipo-desarrollo.com/browse/ENP5-9)
+
+---
+
+## 👤 Reportado por
+
+**Evelyn Nava García**  
+[GitHub: @Eve-nava](https://github.com/Eve-nava)
+
+---
+
+## 🛠️ Recomendaciones para Desarrollo
+
+- Verificar condiciones de entorno (móvil vs emulador) en la gestión de eventos táctiles.
+- Validar estado del botón “Siguiente” con triggers de cambios en el carrito.
+- Asegurar que todos los datos dinámicos (tiempos de preparación, íconos de estado) estén correctamente integrados desde backend o lógica interna.

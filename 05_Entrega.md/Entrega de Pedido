@@ -1,0 +1,61 @@
+# Validación de Entrega de Pedido – App Móvil `Urban.Lunch`
+
+## ✅ Casos Positivos
+
+### Caso #1: Pantalla "El pedido ha sido entregado" tras expiración del temporizador  
+**Descripción:**  
+Al finalizar el tiempo del temporizador, el sistema debe mostrar automáticamente la pantalla con el mensaje “El pedido ha sido entregado”.
+
+**Resultado Esperado:**  
+- Mensaje “El pedido ha sido entregado” aparece automáticamente  
+- No requiere interacción del usuario
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #2: Botón "Recibir el pedido" visible  
+**Descripción:**  
+Se muestra un botón en color púrpura con letras negras que permite confirmar la recepción del pedido.
+
+**Resultado Esperado:**  
+- Botón visible y accesible  
+- Diseño según especificaciones
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #3: Pedido marcado como completado tras hacer clic  
+**Descripción:**  
+Al hacer clic en el botón “Recibir el pedido”, el sistema marca el pedido como completado.
+
+**Resultado Esperado:**  
+- Pedido cambia de estado a “completado”  
+- Flujo continúa correctamente
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+## ❌ Casos Negativos
+
+### Caso #4: Ícono incorrecto en pantalla de seguimiento final  
+**Descripción:**  
+En la pantalla "El pedido ha sido enviado", el ícono que indica el punto de recogida no muestra correctamente la palomita blanca con círculo verde.
+
+**Resultado Esperado:**  
+- Ícono debe ser una palomita blanca dentro de un círculo verde
+
+**Resultado Obtenido:**  
+- Ícono incorrecto o no visible ❌
+
+**Estado:** ❌ `NO APROBADO`  
+[🔗 Ver bug report ENP5-9](https://evelyn-nava-garcia.atlassian.net/browse/ENP5-9)
+
+---
+
+## 🧑‍💻 Tester responsable
+
+**Evelyn Nava García**  
+[GitHub: @Eve-nava](https://github.com/Eve-nava)

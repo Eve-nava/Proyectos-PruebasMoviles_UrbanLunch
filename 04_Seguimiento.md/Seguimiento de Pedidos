@@ -1,0 +1,61 @@
+# Validación de Seguimiento de Pedidos – Recogida de Pedidos – App Móvil `Urban.Lunch`
+
+## ✅ Casos Positivos
+
+### Caso #1: Visualización del punto de recogida en el mapa  
+**Descripción:**  
+El mapa muestra correctamente el punto de recogida donde el usuario puede recoger su pedido.
+
+**Resultado Esperado:**  
+- Punto de recogida visible en el mapa  
+- Posición geográfica precisa
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #2: Rutas desde restaurantes hasta el punto de recogida  
+**Descripción:**  
+El sistema muestra visualmente las rutas entre los restaurantes y el punto de recogida.
+
+**Resultado Esperado:**  
+- Rutas visibles en el mapa  
+- Conexión clara entre restaurantes y punto de recogida
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #3: Listado de platillos pedidos con nombre del restaurante  
+**Descripción:**  
+El usuario puede ver un listado de los platillos que ha pedido, junto con el nombre del restaurante correspondiente.
+
+**Resultado Esperado:**  
+- Todos los platillos solicitados están listados  
+- Se incluye el nombre del restaurante de origen
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+## ❌ Casos Negativos
+
+### Caso #4: No se muestra el tiempo de preparación restante  
+**Descripción:**  
+El sistema debería mostrar el tiempo restante de preparación del pedido, pero esta información no aparece.
+
+**Resultado Esperado:**  
+- Tiempo de preparación restante visible y actualizado
+
+**Resultado Obtenido:**  
+- Tiempo no mostrado ❌
+
+**Estado:** ❌ `NO APROBADO`  
+[🔗 Ver bug report ENP5-6](https://evelyn-nava-garcia.atlassian.net/browse/ENP5-6)
+
+---
+
+## 🧑‍💻 Tester responsable
+
+**Evelyn Nava García**  
+[GitHub: @Eve-nava](https://github.com/Eve-nava)

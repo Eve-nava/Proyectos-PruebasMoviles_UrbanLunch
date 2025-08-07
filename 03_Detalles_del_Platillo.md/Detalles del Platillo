@@ -1,0 +1,62 @@
+# Validación de Detalles del Platillo – App Móvil `Urban.Lunch`
+
+## ✅ Casos Positivos
+
+### Caso #1: Visualización de detalles generales del platillo  
+**Descripción:**  
+La pantalla de detalles del platillo muestra la descripción general, una imagen y la composición del platillo.
+
+**Resultado Esperado:**  
+- Imagen del platillo visible  
+- Descripción clara y legible  
+- Ingredientes o composición mostrados
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #2: Nombre del restaurante visible  
+**Descripción:**  
+El nombre del restaurante que ofrece el platillo se muestra correctamente en la pantalla de detalles.
+
+**Resultado Esperado:**  
+- Nombre del restaurante visible  
+- Asociado correctamente al platillo mostrado
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #3: Precio y tiempo del platillo visibles  
+**Descripción:**  
+El usuario puede ver el precio del platillo y el tiempo estimado de preparación o entrega.
+
+**Resultado Esperado:**  
+- Precio visible y correcto  
+- Tiempo estimado visible y razonable
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+## ❌ Casos Negativos
+
+### Caso #4: Botón “Siguiente” no se activa tras agregar platillo  
+**Descripción:**  
+El botón "Siguiente" debería cambiar de color o activarse después de agregar un platillo a la lista de pedidos, pero no lo hace.
+
+**Resultado Esperado:**  
+- El botón “Siguiente” se activa (visualmente y funcionalmente) al agregar un platillo
+
+**Resultado Obtenido:**  
+- El botón permanece inactivo ❌
+
+**Estado:** ❌ `NO APROBADO`  
+[🔗 Ver bug report ENP5-1](https://evelyn-nava-garcia.atlassian.net/browse/ENP5-1)
+
+---
+
+## 🧑‍💻 Tester responsable
+
+**Evelyn Nava García**  
+[GitHub: @Eve-nava](https://github.com/Eve-nava)

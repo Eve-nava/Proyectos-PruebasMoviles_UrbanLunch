@@ -1,0 +1,62 @@
+# Validación de Elección de Platillos – App Móvil `Urban.Lunch`
+
+## ✅ Casos Positivos
+
+### Caso #1: Paso 2 del progreso en amarillo y seleccionado  
+**Descripción:**  
+El progreso del pedido se muestra correctamente en el pie de página, con el paso 2 en color amarillo y marcado como seleccionado.
+
+**Resultado Esperado:**  
+- Barra de progreso visible  
+- Paso 2 destacado en amarillo  
+- Paso 2 marcado como activo
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #2: Paso 1 del progreso en verde y completado  
+**Descripción:**  
+El paso 1 se muestra como completado (en verde) al llegar a la pantalla de elección de platillos.
+
+**Resultado Esperado:**  
+- Paso 1 de la barra de progreso aparece en color verde  
+- Indica que ha sido completado correctamente
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+### Caso #3: Bloqueo de zoom en dispositivo móvil  
+**Descripción:**  
+La pantalla del listado de platillos no permite hacer zoom usando gestos en un dispositivo móvil.
+
+**Resultado Esperado:**  
+- Zoom deshabilitado  
+- Pantalla fija sin cambios de escala
+
+**Estado:** ✅ `APROBADO`
+
+---
+
+## ❌ Casos Negativos
+
+### Caso #4: Zoom permitido en emulador  
+**Descripción:**  
+La pantalla del listado de platillos permite hacer zoom cuando se prueba desde un emulador, lo cual no es el comportamiento esperado.
+
+**Resultado Esperado:**  
+- Zoom debe estar deshabilitado, igual que en el dispositivo móvil real
+
+**Resultado Obtenido:**  
+- El emulador permite hacer zoom ❌
+
+**Estado:** ❌ `NO APROBADO`  
+[🔗 Ver bug report ENP5-3](https://evelyn-nava-garcia.atlassian.net/browse/ENP5-3)
+
+---
+
+## 🧑‍💻 Tester responsable
+
+**Evelyn Nava García**  
+[GitHub: @Eve-nava](https://github.com/Eve-nava)
